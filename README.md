@@ -17,6 +17,15 @@ Java / Spring Boot で作成した文章管理アプリの学習用プロジェ�
 - 本番環境ではシークレット管理サービスの参照（例: `op://...`）を
   起動時に解決して注入し、接続情報はログや例外へ出力しません。
 
+## 学習用スケルトンについて
+
+`src/main/resources/templates/user/` 配下の 7 件のテンプレート
+（`userInsert.html` / `userList.html` / `userInformation.html` / `userUpdate.html` /
+`userUpdateComplete.html` / `userDelete.html` / `userDeleteComplete.html`）と、
+`com.hokanko.hhh.controller.MainController` は中身を持たない**学習用スケルトン**です。
+演習で実装する予備領域として意図的に空のまま置いており、現時点では画面も
+ルーティングも提供しません。共通部品は `templates/commonParts/` に集約済みです。
+
 ## ライセンス
 
 本プロジェクトは `AGPL-3.0-or-later` で提供されます。

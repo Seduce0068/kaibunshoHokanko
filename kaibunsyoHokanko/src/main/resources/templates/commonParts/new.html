@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	th:replace="~{lesson07_05/layout :: layout(~{:: new})}">
+	th:replace="~{commonParts/layout :: layout(~{:: new})}">
 
 <head>
 
@@ -10,14 +10,12 @@
 <body>
 
 	<new>
-			<form method="get" th:action="@{/lesson07_05/index}">
+			<form method="get" th:action="@{/index}">
 				社員名:<input type="text" name="name">
 				<input type="submit" value="登録">
 			</form>
 	</new>
 
 </body>
-
-<script th:src="@{/js/common.js}"></script>
 
 </html>
